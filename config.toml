@@ -1,0 +1,65 @@
+baseURL = "https://yourusername.github.io/"
+languageCode = "en-us"
+title = "CH3SHIR3 | Security Researcher & Developer"
+enableRobotsTXT = true
+enableGitInfo = false
+
+[params]
+  author = "CH3SHIR3"
+  description = "Security Researcher, CTF Player & Developer. Exploring the digital frontier."
+  keywords = ["security", "cybersecurity", "CTF", "developer", "portfolio", "hacking", "writeups"]
+  logo = "/images/logo.png"
+  favicon = "/images/favicon.ico"
+
+  # Social links
+  github = "https://github.com/yourusername"
+  linkedin = "https://linkedin.com/in/yourusername"
+  twitter = "https://twitter.com/yourusername"
+  email = "your.email@example.com"
+
+  # Formspree endpoint for contact form
+  formspree = "https://formspree.io/f/your-form-id"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 3
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 4
+  [[menu.main]]
+    name = "Contact"
+    url = "/#contact"
+    weight = 5
+
+[markup]
+  [markup.highlight]
+    style = "monokai"
+    lineNos = true
+    lineNumbersInTable = true
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS"]
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"

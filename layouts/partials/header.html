@@ -1,0 +1,25 @@
+<header class="cyber-header">
+    <nav class="cyber-nav">
+        <a href="/" class="nav-logo">
+            <span class="glitch" data-text="{{ .Site.Params.author }}">{{ .Site.Params.author }}</span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleNav()">
+            <span class="hamburger"></span>
+        </button>
+
+        <ul class="nav-menu">
+            {{ range .Site.Menus.main }}
+            <li class="nav-item">
+                <a href="{{ .URL }}" class="nav-link {{ if eq $.RelPermalink .URL }}active{{ end }}">
+                    <span class="nav-text">{{ .Name }}</span>
+                    <span class="nav-glitch">{{ .Name }}</span>
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+    </nav>
+
+    <!-- Scanline effect -->
+    <div class="scanline"></div>
+</header>
