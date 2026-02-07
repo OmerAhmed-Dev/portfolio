@@ -1,4 +1,4 @@
-baseURL = "https://yourusername.github.io/"
+baseURL = "https://ch3shir3.netlify.app/"
 languageCode = "en-us"
 title = "CH3SHIR3 | Security Researcher & Developer"
 enableRobotsTXT = true
@@ -12,7 +12,7 @@ enableGitInfo = false
   favicon = "/images/favicon.ico"
 
   # Social links
-  github = "https://github.com/yourusername"
+  github = "https://github.com/OmerAhmed-Dev"
   linkedin = "https://linkedin.com/in/yourusername"
   twitter = "https://twitter.com/yourusername"
   email = "your.email@example.com"
