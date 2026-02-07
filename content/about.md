@@ -36,9 +36,24 @@ skills:
       - name: "Git"
         level: 85
 certifications:
-  - "OSCP"
-  - "CEH"
-  - "CompTIA Security+"
+  - name: "OSCP"
+    abbr: "OSCP"
+    issuer: "Offensive Security"
+  - name: "CEH"
+    abbr: "CEH"
+    issuer: "EC-Council"
+  - name: "Security+"
+    abbr: "Sec+"
+    issuer: "CompTIA"
+ctf_stats:
+  - value: "150+"
+    label: "Challenges Solved"
+  - value: "Top 5%"
+    label: "HTB Ranking"
+  - value: "25+"
+    label: "CTF Events"
+  - value: "10+"
+    label: "CVEs Found"
 ---
 
 Hey there! I'm a passionate security researcher and developer with a focus on offensive security and CTF competitions. I love breaking things (legally) and finding creative ways to bypass security measures.

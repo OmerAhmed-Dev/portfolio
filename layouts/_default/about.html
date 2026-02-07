@@ -86,10 +86,32 @@
                 <span class="title-decoration">//</span>
             </h2>
 
-            <div class="tech-grid">
+            <div class="cert-grid">
                 {{ range . }}
-                <div class="tech-item">
-                    <span class="tech-name">{{ . }}</span>
+                <div class="cert-badge">
+                    <div class="cert-icon">{{ .abbr | default (substr .name 0 2) }}</div>
+                    <span class="cert-name">{{ .name }}</span>
+                    {{ with .issuer }}<span class="cert-issuer">{{ . }}</span>{{ end }}
+                </div>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+
+        <!-- CTF Stats -->
+        {{ with .Params.ctf_stats }}
+        <div class="ctf-section" style="margin-top: 60px;">
+            <h2 class="section-title">
+                <span class="title-decoration">//</span>
+                CTF_ACHIEVEMENTS
+                <span class="title-decoration">//</span>
+            </h2>
+
+            <div class="ctf-stats">
+                {{ range . }}
+                <div class="ctf-stat-card">
+                    <div class="ctf-stat-value">{{ .value }}</div>
+                    <div class="ctf-stat-label">{{ .label }}</div>
                 </div>
                 {{ end }}
             </div>
